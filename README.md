@@ -26,3 +26,5 @@ Below is a list of functional requirements for the music player. The time frame 
 5. By the end of each track, the next track should start automatically
 6. Automatic start of the next track can be turned off via checkbox
 7. Jump the track time by clicking on progress bar
+
+![UI draft](ui-draft.png)
