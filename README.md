@@ -29,6 +29,6 @@ Below is a list of functional requirements for the music player. The time frame 
 
 ## Draft
 
-The following draft can help you get a general idea of how the app should look and feel. The draft isn't complete and you will probably need to add or change some elements to fit your implementation and ideas. We have that you'll enjoy the task, good luck!
+The following draft can help you get a general idea of how the app should look and feel. The draft isn't complete and you will probably need to add or change some elements to fit your implementation and ideas. We hope that you'll enjoy the task, good luck!
 
 ![UI draft](ui-draft.png)
