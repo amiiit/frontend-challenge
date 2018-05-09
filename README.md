@@ -8,7 +8,7 @@ Create a simple web based music player.
 3. The actual music file is name track_file_url and is a property of each track object.
 
 ## Good to know:
-1. Only firefox supports the complete API of HTMLAudioElement events. So if you want to use events you should prefer working on firefox. Otherwise you are free to use any browser (or not use events)
+1. Only firefox supports the complete API of HTMLAudioElement events. So if you want to use events you should prefer working on firefox. Otherwise you are free to use any browser. Working with events is not absolutely necessary, we just wanted to save you some time by telling you this. 
 
 ## Functional Requirements
 
