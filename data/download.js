@@ -49,6 +49,7 @@ axios.get('https://freemusicarchive.org/featured.json?genre_handle=Blues')
     });
     return toDownload
   }).then(wgetConfigs => {
+     console.log('Will download now', wgetConfigs.length, 'files. This can take some time.');
     return Promise.all(wgetConfigs.map(wgetConfig => {
       return new Promise((resolve, reject) => {
         const download = wget.download(wgetConfig.src, wgetConfig.output);
