@@ -8,7 +8,8 @@
   "dependencies": {
     "axios": "^0.18.0",
     "http-server": "^0.11.1",
-    "mkdirp": "^0.5.1"
+    "mkdirp": "^0.5.1",
+    "wget-improved": "^3.0.1"
   },
   "scripts": {
     "server": "http-server ./data --cors -p 8085",
