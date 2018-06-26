@@ -11,7 +11,7 @@
     "mkdirp": "^0.5.1"
   },
   "scripts": {
-    "server": "http-server ./data --cors",
+    "server": "http-server ./data --cors -p 8085",
     "download": "cd data && node ./download.js"
   }
 }

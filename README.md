@@ -21,7 +21,7 @@ Now that we have the files locally, we can serve them via:
 yarn server
 ```
 
-To see the list of available tracks open [http://localhost:8081/tracks.json](http://localhost:8081/tracks.json). You will see tracks similar to the following:
+To see the list of available tracks open [http://localhost:8085/tracks.json](http://localhost:8085/tracks.json). You will see tracks similar to the following:
 
 ```json
 	{
@@ -67,7 +67,7 @@ To see the list of available tracks open [http://localhost:8081/tracks.json](htt
 	}
 ```
 
-The actual mp3 file for each song is available from the local server using the `track_file` property. In the example above you should be able to fetch the mp3 under the path [http://localhost:8081/music/WFMU/NADINE/Live_at_WFMU_for_Sophisticated_Boom_Boom_with_Sheila_B_292018/NADINE_-_01_-_Ultra_Pink.mp3](http://localhost:8081/music/WFMU/NADINE/Live_at_WFMU_for_Sophisticated_Boom_Boom_with_Sheila_B_292018/NADINE_-_01_-_Ultra_Pink.mp3)
+The actual mp3 file for each song is available from the local server using the `track_file` property. In the example above you should be able to fetch the mp3 under the path [http://localhost:8085/music/WFMU/NADINE/Live_at_WFMU_for_Sophisticated_Boom_Boom_with_Sheila_B_292018/NADINE_-_01_-_Ultra_Pink.mp3](http://localhost:8085/music/WFMU/NADINE/Live_at_WFMU_for_Sophisticated_Boom_Boom_with_Sheila_B_292018/NADINE_-_01_-_Ultra_Pink.mp3)
 
 ## Functional Requirements
 
