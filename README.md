@@ -7,6 +7,8 @@ Create a simple web based music player.
 First we need to download some songs locally to be able to play them. We can use the included script in order to download a few songs from the free music archive.
 
 ```
+git clone git@github.com:amiiit/frontend-challenge.git
+cd frontend-challenge
 yarn
 yarn download
 ```
