@@ -6,6 +6,7 @@ Create a simple web based music player.
 1. Endpoint for getting a track list: https://freemusicarchive.org/featured.json
 2. In each track object (under response property aTracks) there are several metadata that you are free to use to present on the UI.
 3. The actual music file is name track_file_url and is a property of each track object.
+4. In order to use the API from you local client you would need to enable a CORS proxy. See under section [Caveats](README.md##Caveats).
 
 ## Good to know:
 1. Only firefox supports the complete API of HTMLAudioElement events. So if you want to use events you should prefer working on firefox. Otherwise you are free to use any browser. Working with events is not absolutely necessary, we just wanted to save you some time by telling you this. 
@@ -32,3 +33,19 @@ Below is a list of functional requirements for the music player. The time frame 
 The following draft can help you get a general idea of how the app should look and feel. The draft isn't complete and you will probably need to add or change some elements to fit your implementation and ideas. We hope that you'll enjoy the task, good luck!
 
 ![UI draft](ui-draft.png)
+
+# Caveats
+
+The free music API doesn't allow CORS requests. Since this is just an experimental project we just work around it by using a local CORS proxy. An example for using a CORS proxy would be:
+
+```
+$ npm install -g cors-server
+$ cors-server
+Starting server on port 3015...
+```
+
+Then instead of calling: ```https://freemusicarchive.org/featured.json``` from the application, you will need to call:
+```http://localhost:3015/https://freemusicarchive.org/featured.json```
+
+
+
