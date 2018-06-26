@@ -5,7 +5,7 @@ var child_process = require('child_process');
 var axios = require('axios');
 axios.get('https://freemusicarchive.org/featured.json?genre_handle=Blues')
   .then(function (response) {
-    let tracksToDownload = 10;
+    let tracksToDownload = 5;
     console.log('Please execute the following to download the songs:\n');
 
     const tracksToSave = [];
@@ -23,7 +23,7 @@ axios.get('https://freemusicarchive.org/featured.json?genre_handle=Blues')
       if (!fs.existsSync(trackPath)){
         mkdirp(trackPath);
       }
-      console.log('wget ' + track.track_file_url + ' -O ' + trackPath + '/' + trackName + (tracksToDownload ? ' &&' : ''))
+      console.log('wget ' + track.track_file_url + ' -O ' + trackPath + '/' + trackName + (tracksToDownload ? ' &&' : '\n'))
 
       // remove references to freemusicharchive
       delete track.track_file_url;
@@ -34,14 +34,11 @@ axios.get('https://freemusicarchive.org/featured.json?genre_handle=Blues')
       tracksToSave.push(track)
     });
 
-    console.log('json file: ', JSON.stringify(tracksToSave));
-
     fs.writeFile(__dirname + '/tracks.json', JSON.stringify(tracksToSave, null, '\t'), function(err) {
       if(err) {
         return console.log(err);
       }
 
-      console.log("The file was saved!");
     });
   });
 
