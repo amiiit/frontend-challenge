@@ -13,6 +13,14 @@ yarn
 yarn download
 ```
 
+This will download per default metadata and music files for 5 tracks. You could also load more by adding a numerical argument to the download script, for example:
+
+```
+yarn download 10
+```
+
+Will fetch metadata and audio files for 10 tracks from freemusicarchive.org.
+
 The output of this script is a set of wget commands. Copy and paste them into your terminal in order to download the actual mp3 files.
 
 Now that we have the files locally, we can serve them via:
