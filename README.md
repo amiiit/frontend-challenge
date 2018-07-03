@@ -21,8 +21,6 @@ yarn download 10
 
 Will fetch metadata and audio files for 10 tracks from freemusicarchive.org.
 
-The output of this script is a set of wget commands. Copy and paste them into your terminal in order to download the actual mp3 files.
-
 Now that we have the files locally, we can serve them via:
 
 ```
